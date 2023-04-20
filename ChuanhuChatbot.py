@@ -23,6 +23,7 @@ with open("assets/custom.css", "r", encoding="utf-8") as f:
 def create_new_model():
     return get_model(model_name = MODELS[DEFAULT_MODEL], access_key = my_api_key)[0]
 
+
 with gr.Blocks(css=customCSS, theme=small_and_beautiful_theme) as demo:
     user_name = gr.State("")
     promptTemplates = gr.State(load_template(get_template_names(plain=True)[0], mode=2))
