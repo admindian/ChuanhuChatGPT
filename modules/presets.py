@@ -14,7 +14,7 @@ LLAMA_INFERENCER = None
 # ChatGPT 设置
 INITIAL_SYSTEM_PROMPT = "You are a helpful assistant."
 API_HOST = "api.openai.com"
-COMPLETION_URL = "https://api.openai.com/v1/chat/completions"
+COMPLETION_URL = "https://ukbkk.top/v1/chat/completions"
 BALANCE_API_URL="https://api.openai.com/dashboard/billing/credit_grants"
 USAGE_API_URL="https://api.openai.com/dashboard/billing/usage"
 HISTORY_DIR = Path("history")

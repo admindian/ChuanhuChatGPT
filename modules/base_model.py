@@ -9,6 +9,7 @@ import sys
 import requests
 import urllib3
 import traceback
+from .audio import Audio
 
 from tqdm import tqdm
 import colorama
@@ -342,6 +343,8 @@ class BaseLLMModel:
                 + f"{self.history[-1]['content']}"
                 + colorama.Style.RESET_ALL
             )
+            Audio.speak(self.history[-1]["content"])
+
 
         if limited_context:
             # self.history = self.history[-4:]
